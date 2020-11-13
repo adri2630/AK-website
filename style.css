@@ -149,6 +149,16 @@ main h2{
 }.solution:hover > section p  {
     color:black;
 }
+.solution:hover > section .button {
+
+border: 1px solid #000;
+
+}
+.solution :hover > .button a{
+
+    color: #000;
+
+}
 .solution {
     display: grid;
     overflow: hidden;
@@ -184,7 +194,7 @@ p {
    margin-left: 2rem;
     width: 10em;
     height: 3rem;
-    background-color: aqua;
+
     display: flex;
      justify-content: center;
     align-items: center;
@@ -196,7 +206,7 @@ p {
 .solution .button a{
     text-decoration: none;
     color: #fff;
-    background-color:
+
 }
 @media only screen and (min-width: 890px) {
     .first {
