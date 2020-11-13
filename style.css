@@ -105,7 +105,7 @@ nav ul li {
     background-color: #218169;
     border-radius: 0.5rem 0.5rem;
     width: 15em;
-    height: 3em;
+    height: 3rem;
     display: flex;
     margin: 1rem;
     color:#fff;
@@ -134,10 +134,20 @@ main h2, p{
 main h2, .filter{
     color: #386082;
 }
+main h2{
+    font-size: 2rem;
+}
 .solution:hover > section {
     background: rgba(255, 255, 255, 0.9);
-    border: 0.1rem solid #ccc;s
+    border: 0.1rem solid #ccc;
     transition: all 0.3s;
+
+
+}
+.solution:hover > section h3   {
+    color:black;
+}.solution:hover > section p  {
+    color:black;
 }
 .solution {
     display: grid;
@@ -160,12 +170,34 @@ display: grid;
 
 }
 
-.solution h3,
-p,
-button {
-padding: 2rem;
+.solution h3 {
+    font-size: 1.5rem;
 }
 
+.solution h3,
+p {
+   margin-left: 2rem;
+    color: #fff;
+}
+
+.solution .button {
+   margin-left: 2rem;
+    width: 10em;
+    height: 3rem;
+    background-color: aqua;
+    display: flex;
+     justify-content: center;
+    align-items: center;
+    border-radius: 0.5rem 0.5rem;
+    background: rgba(0, 0, 0, 0);
+     border: 1px solid #fff;
+
+}
+.solution .button a{
+    text-decoration: none;
+    color: #fff;
+    background-color:
+}
 @media only screen and (min-width: 890px) {
     .first {
         grid-template-columns: 350px 1fr;
@@ -186,5 +218,6 @@ nav ul {
     margin-right: 5rem;
 }
 #wrapper {
-    margin: 3rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
     }}
