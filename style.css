@@ -6,15 +6,15 @@ html,
 body {
     margin: 0;
     padding: 0;
-    font-family:;
-    background-color: #ccc;
+    font-family: 'Aleo', serif;
+    background-color:#ECEFF2;
 }
 
 
 #wrapper {
     margin: 1rem;
     display: grid;
-    background-color: #ccc;
+
 
 }
 
@@ -47,6 +47,7 @@ nav ul {
     justify-content: flex-end;
 
 
+
 }
 nav ul li {
 
@@ -60,6 +61,50 @@ nav ul li {
     grid-column: 1/-1;
 
 }
+#save_money h1{
+   font-size: 55px;
+}
+#save_money ul{
+   list-style-image: url(img/green_list_icon.png);
+}
+
+
+#guide{
+    display: grid;
+}
+
+
+#guide > * {
+
+    grid-column: 1/-1;
+    grid-row: 1/-1;
+}
+
+.speach_box ul:hover > li {
+  background-color:#386082;
+    transition: all 0.3s;
+}
+.speach_box h1{
+    margin: 3rem;
+}
+
+.speach_box ul li{
+    list-style: none;
+    margin-left: 1rem;
+    background-color: #218169;
+    border-radius: 0.5rem 0.5rem;
+    width: 15em;
+    height: 3em;
+    display: flex;
+    margin: 1rem
+
+}
+.speach_box ul li a{
+    margin-left: 1rem;
+    align-self:center;
+}
+
+
 
 main{
 
