@@ -25,6 +25,7 @@ img {
 }
 
 header {
+    margin-top: 1rem;
     display: grid;
     grid-template-columns: 100px 1fr;
     background-color: white;
@@ -49,7 +50,7 @@ nav ul {
 }
 nav ul li {
 
-    padding: 30px 5%;
+    padding: 30px 1%;
     list-style: none;
 }
 
@@ -105,4 +106,15 @@ padding: 2rem;
         grid-template-columns: 300px 1fr;
     }
 
+header h1 {
+
+    margin-left: 5rem;
+}
+
+nav ul {
+
+    margin-right: 5rem;
+
+
+}
 }
