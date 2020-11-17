@@ -245,6 +245,64 @@ p {
     width: 80%;
 
 }
+
+
+
+
+.contact {
+    margin-top: 8rem;
+    margin-bottom: 8rem;
+    display: grid;
+    overflow: hidden;
+    cursor: pointer;
+
+}
+
+.contact > * {
+    position: relative;
+    width: 100%;
+    grid-column: 1/-1;
+    grid-row: 1/-1;
+}
+
+.contact section {
+
+    z-index: 10;
+    display: grid;
+
+
+}
+.contact h4:hover{
+    color: #ccc;
+     text-decoration: underline;
+}
+.contact h2 {
+    font-size: 3rem;
+
+    color: #fff;
+    text-align: center;
+vertical-align: middle;
+
+}
+.contact h4 {
+   line-height: 90px;
+     cursor: pointer;
+    color: #fff;
+    text-align: center;
+vertical-align: middle;
+
+}
+
+footer{
+    display:grid;
+    background-color: #386082;
+     display: grid;
+    grid-column: 1/-1;
+
+
+
+}
+
 @media only screen and (max-width: 890px) {
     .imgfordesk{
         display: none;
@@ -276,8 +334,15 @@ p {
         display: inline-block
     }
 
+    footer{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
 
-
+    }
+    footer section{
+         margin-left: 5rem;
+        margin-right: 5rem;
+    }
     #wrapper {
         margin-left: 5rem;
         margin-right: 5rem;
