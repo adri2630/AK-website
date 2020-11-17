@@ -134,6 +134,16 @@ main h2, p{
 main h2, .filter{
     color: #386082;
 }
+
+
+ #buttonbox {
+    display: flex;
+       flex-direction: row;
+
+}
+.filter{
+    margin: 5px;
+}
 main h2{
     font-size: 2rem;
 }
@@ -145,18 +155,18 @@ main h2{
 
 }
 .solution:hover > section h3   {
-    color:black;
+    color:#386082;
 }.solution:hover > section p  {
-    color:black;
+    color:#386082;
 }
 .solution:hover > section .button {
 
-border: 1px solid #000;
+border: 1px solid #386082;
 
 }
 .solution :hover > .button a{
 
-    color: #000;
+    color: #386082;
 
 }
 .solution {
