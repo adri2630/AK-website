@@ -31,7 +31,7 @@ const copy = productTemplate.cloneNode(true);
 
     copy.querySelector("h3").textContent = oneProduct.title.rendered;
     copy.querySelector("p").textContent = oneProduct.content.rendered;
-    copy.querySelector("img").setAttribute;
+    copy.querySelector("img").setAttribute("src",'http://keep-it-simple.site/wp-content/uploads/2020/11/Group-13.png')
 
     //append it
     document.querySelector("main").appendChild(copy);
