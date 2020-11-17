@@ -1,7 +1,7 @@
 
 
 //fetch the categories
-fetch("http://keep-it-simple.site/wp-json/wp/v2/categories")
+fetch("http://keep-it-simple.site/wp-json/wp/v2/categories?parent=3")
 .then(function(res){
     console.log(res)
     return res.json();
@@ -30,7 +30,7 @@ const catCopy = catTemplate.cloneNode(true);
    catCopy.querySelector(".filter").textContent = oneCat.name;
 
     //append it
-    document.querySelector("#buttonbox").appendChild(catCopy);
+    document.querySelector("h2").appendChild(catCopy);
 
 }
 

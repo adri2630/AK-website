@@ -7,7 +7,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Aleo', serif;
-    background-color:#ECEFF2;
+    background-color: #ECEFF2;
 }
 
 
@@ -42,13 +42,14 @@ header h1 {
 }
 
 nav ul {
-    display:flex;
+    display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
 
 
 
 }
+
 nav ul li {
 
     padding: 30px 1%;
@@ -61,20 +62,24 @@ nav ul li {
     grid-column: 1/-1;
 
 }
-.first h1{
 
-  color: #40617F;
+.first h1 {
+
+    color: #40617F;
 
 }
-#save_money h1{
-   font-size: 2.5rem;
+
+#save_money h1 {
+    font-size: 2.5rem;
 }
-#save_money ul{
-   list-style-image: url(img/green_list_icon.png);
+
+#save_money ul {
+    list-style-image: url(img/green_list_icon.png);
 }
 
 
-#guide{
+
+#guide {
     display: grid;
 
 }
@@ -87,11 +92,15 @@ nav ul li {
 }
 
 .speach_box ul li:hover {
-  background-color:#386082;
+    background-color: #386082;
     transition: all 0.3s;
 }
 
-.speach_box h1{
+.speach_box{
+margin-top: 2rem;
+}
+
+.speach_box h1 {
     margin-left: 3rem;
     margin-top: 2rem;
     font-size: 1.5rem;
@@ -99,7 +108,7 @@ nav ul li {
 
 }
 
-.speach_box ul li{
+.speach_box ul li {
     list-style: none;
     margin-left: 1rem;
     background-color: #218169;
@@ -108,45 +117,47 @@ nav ul li {
     height: 3rem;
     display: flex;
     margin: 1rem;
-    color:#fff;
+    color: #fff;
 
 }
-.speach_box ul li a{
+
+.speach_box ul li a {
     margin-left: 1rem;
-    align-self:center;
-    color:#fff;
-text-decoration: none;
+    align-self: center;
+    color: #fff;
+    text-decoration: none;
 
 }
 
+.filter {
+    display: grid;
 
+    margin: 5px;
+}
 
-main{
+main {
 
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
     gap: 1.5rem;
 }
-main h2, p{
-      grid-column: 1/-1;
+
+main h2,
+p {
+    grid-column: 1/-1;
 
 }
-main h2, .filter{
+
+main h2,
+.filter {
     color: #386082;
 }
 
 
- #buttonbox {
-    display: flex;
-       flex-direction: row;
-
-}
-.filter{
-    margin: 5px;
-}
-main h2{
+main h2 {
     font-size: 2rem;
 }
+
 .solution:hover > section {
     background: rgba(255, 255, 255, 0.9);
     border: 0.1rem solid #ccc;
@@ -154,21 +165,27 @@ main h2{
 
 
 }
-.solution:hover > section h3   {
-    color:#386082;
-}.solution:hover > section p  {
-    color:#386082;
+
+.solution:hover > section h3 {
+    color: #386082;
 }
+
+.solution:hover > section p {
+    color: #386082;
+}
+
 .solution:hover > section .button {
 
-border: 1px solid #386082;
+    border: 1px solid #386082;
 
 }
-.solution :hover > .button a{
+
+.solution :hover > .button a {
 
     color: #386082;
 
 }
+
 .solution {
     display: grid;
     overflow: hidden;
@@ -182,10 +199,10 @@ border: 1px solid #386082;
     grid-row: 1/-1;
 }
 
-.solution section{
+.solution section {
 
-z-index: 10;
-display: grid;
+    z-index: 10;
+    display: grid;
 
 
 }
@@ -196,48 +213,73 @@ display: grid;
 
 .solution h3,
 p {
-   margin-left: 2rem;
+    margin-left: 2rem;
     color: #fff;
 }
 
 .solution .button {
-   margin-left: 2rem;
+    margin-left: 2rem;
     width: 10em;
     height: 3rem;
 
     display: flex;
-     justify-content: center;
+    justify-content: center;
     align-items: center;
     border-radius: 0.5rem 0.5rem;
     background: rgba(0, 0, 0, 0);
-     border: 1px solid #fff;
+    border: 1px solid #fff;
 
 }
-.solution .button a{
+
+.solution .button a {
     text-decoration: none;
     color: #fff;
 
+}
+.imgbox{
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+}
+.imgfordesk{
+    width: 80%;
+
+}
+@media only screen and (max-width: 890px) {
+    .imgfordesk{
+        display: none;
+    }
 }
 @media only screen and (min-width: 890px) {
     .first {
         grid-template-columns: 350px 1fr;
 
     }
-    #guide{
+
+    #guide {
         grid-area: 1/3;
         margin-right: 3rem;
     }
 
-header h1 {
 
-    margin-left: 5rem;
+    header h1 {
+
+        margin-left: 5rem;
+    }
+
+    nav ul {
+
+        margin-right: 5rem;
+    }
+
+    .filter {
+        display: inline-block
+    }
+
+
+
+    #wrapper {
+        margin-left: 5rem;
+        margin-right: 5rem;
+    }
 }
-
-nav ul {
-
-    margin-right: 5rem;
-}
-#wrapper {
-    margin-left: 5rem;
-    margin-right: 5rem;
-    }}
