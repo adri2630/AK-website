@@ -1,7 +1,7 @@
 
 
 //fetch the categories
-fetch("http://keep-it-simple.site/wp-json/wp/v2/categories?parent=3")
+fetch("http://keep-it-simple.site/wp-json/wp/v2/categories")
 .then(function(res){
     console.log(res)
     return res.json();
@@ -69,6 +69,7 @@ const copy = productTemplate.cloneNode(true);
 
 
     copy.querySelector("h3").textContent = oneProduct.title.rendered;
+   // copy.querySelector(".button a").textContent = oneProduct.link;
     copy.querySelector(".editor").textContent = oneProduct.shortdescription;
     copy.querySelector("img").setAttribute("src",'http://keep-it-simple.site/wp-content/uploads/2020/11/Group-22.png')
 
@@ -108,7 +109,7 @@ const copyT = contacttemp.cloneNode(true);
 
 
     copyT.querySelector("h2").textContent = oneContact.title.rendered;
-    copyT.querySelector("h4").textContent = oneContact.link;
+   // copyT.querySelector("h4").textContent = oneContact.link;//
 
     //append it
     document.querySelector(".insidecontact").appendChild(copyT);

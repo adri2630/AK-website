@@ -98,8 +98,8 @@ nav ul li {
     transition: all 0.3s;
 }
 
-.speach_box{
-margin-top: 2rem;
+.speach_box {
+    margin-top: 2rem;
 }
 
 .speach_box h1 {
@@ -169,7 +169,8 @@ main h2 {
 
 
 }
-.solution:hover > .image{
+
+.solution:hover > .image {
     visibility: hidden;
 }
 
@@ -218,13 +219,13 @@ main h2 {
 
     margin-left: 2rem;
     margin-right: 2rem;
-    font-size:2.2rem;
-     color: #fff;
+    font-size: 2.2rem;
+    color: #fff;
 }
 
 
-.solution
-p {   margin-left: 2rem;
+.solution p {
+    margin-left: 2rem;
     margin-right: 2rem;
 
     color: #fff;
@@ -249,12 +250,14 @@ p {   margin-left: 2rem;
     color: #fff;
 
 }
-.imgbox{
+
+.imgbox {
     display: flex;
-    justify-content:flex-end;
+    justify-content: flex-end;
     align-items: center;
 }
-.imgfordesk{
+
+.imgfordesk {
     width: 70%;
 
 }
@@ -285,59 +288,73 @@ p {   margin-left: 2rem;
 
 
 }
-.contact h4:hover{
+
+.contact h4 a:hover {
     color: #ccc;
-     text-decoration: underline;
+    text-decoration: underline;
 }
+
+.contact h4 a {
+    color: #fff;
+    text-decoration: none;
+}
+
 .contact h2 {
     font-size: 3vw;
 
     color: #fff;
     text-align: center;
-vertical-align: middle;
+    vertical-align: middle;
 
 }
+
 .contact h4 {
-   line-height: 1vw;
-     cursor: pointer;
+    line-height: 1vw;
+    cursor: pointer;
     color: #fff;
     text-align: center;
-vertical-align: middle;
+    vertical-align: middle;
 
 }
 
-footer{
-    display:grid;
+footer {
+    display: grid;
     background-color: #386082;
-     display: grid;
+    display: grid;
     grid-column: 1/-1;
 
 }
-  footer ul {
+
+footer ul {
     display: flex;
     flex-wrap: wrap;
-   align-items: center;
+    align-items: center;
 
 
 
 }
-footer >*{
-     margin: 1rem;
+
+footer > * {
+    margin: 1rem;
 }
+
 footer ul li {
 
     padding: 1%;
-   list-style: none;
+    list-style: none;
 }
-footer p{
-    color:#ECEFF2;
+
+footer p {
+    color: #ECEFF2;
     line-height: 2em;
 }
+
 @media only screen and (max-width: 890px) {
-    .imgfordesk{
+    .imgfordesk {
         display: none;
     }
 }
+
 @media only screen and (min-width: 890px) {
     .first {
         grid-template-columns: 350px 1fr;
@@ -364,13 +381,14 @@ footer p{
         display: inline-block
     }
 
-    footer{
+    footer {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
 
     }
-    footer section{
-         margin-left: 7rem;
+
+    footer section {
+        margin-left: 7rem;
         margin-right: 7rem;
     }
 
