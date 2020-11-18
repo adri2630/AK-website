@@ -1,3 +1,4 @@
+
 #wrapper {
 
 	position: absolute;
@@ -204,7 +205,13 @@ p {
 }
 
 
+#number, #note2, #note{
+visibility: hidden;
+}
 
+.enumeratie ul li{
+    visibility: hidden;
+}
 button {
 	position: absolute;
 	top: 36vw;
