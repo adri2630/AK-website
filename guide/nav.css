@@ -1,0 +1,33 @@
+header {
+    margin-top: 1rem;
+
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    background-color: white;
+}
+
+
+header h1 {
+    background-image: url(img/AKAP_Logo_Vertical_OrangeBlack_RGB.png);
+    background-repeat: no-repeat;
+    width: 97px;
+    height: 80px;
+    text-indent: -9999999989px;
+
+
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+
+
+
+}
+
+nav ul li {
+
+    padding: 30px 1%;
+    list-style: none;
+}
