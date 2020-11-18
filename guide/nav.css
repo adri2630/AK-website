@@ -16,6 +16,11 @@ header h1 {
 
 
 }
+img {
+    max-width: 100%;
+    height: auto;
+
+}
 
 nav ul {
     display: flex;

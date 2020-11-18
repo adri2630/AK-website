@@ -1,0 +1,30 @@
+footer {
+	display: grid;
+	background-color: #386082;
+	grid-column: 1/-1;
+
+}
+
+footer ul {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+
+
+
+}
+
+footer > * {
+	margin: 1rem;
+}
+
+footer ul li {
+
+	padding: 1%;
+	list-style: none;
+}
+
+footer p {
+	color: #ECEFF2;
+	line-height: 2em;
+}
