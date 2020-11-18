@@ -66,11 +66,52 @@ function displayProducts(oneProduct){
 const copy = productTemplate.cloneNode(true);
 // fill it with the stuffypu put in wordpress for better or worse why can i just put here lorem ipsum o sth ?
 
+
+
     copy.querySelector("h3").textContent = oneProduct.title.rendered;
-    copy.querySelector("p").textContent = oneProduct.content.rendered;
+    copy.querySelector(".editor").textContent = oneProduct.shortdescription;
     copy.querySelector("img").setAttribute("src",'http://keep-it-simple.site/wp-content/uploads/2020/11/Group-22.png')
 
     //append it
     document.querySelector("main").appendChild(copy);
 
 }
+
+
+
+//fetch the data
+fetch("http://keep-it-simple.site/wp-json/wp/v2/contact/")
+.then(function(resp){
+    console.log(resp)
+    return resp.json();
+})
+.then(function(datay){
+        console.log(datay)
+    receivedContact(datay);
+})
+
+function receivedContact(cont){
+    console.log(cont)
+    cont.forEach(displayContact)
+
+}
+// thi function will display one product find the template, clone it and fill it in and append it, what a multitasker
+function displayContact(oneContact){
+        console.log(oneContact)
+    //fidn the template
+    const contacttemp = document.querySelector("#contactTemp").content;
+
+    //clone said template
+const copyT = contacttemp.cloneNode(true);
+// fill it with the stuffypu put in wordpress for better or worse why can i just put here lorem ipsum o sth ?
+
+
+
+    copyT.querySelector("h2").textContent = oneContact.title.rendered;
+    copyT.querySelector("h4").textContent = oneContact.link;
+
+    //append it
+    document.querySelector(".insidecontact").appendChild(copyT);
+
+}
+

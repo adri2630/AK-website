@@ -26,6 +26,7 @@ img {
 
 header {
     margin-top: 1rem;
+
     display: grid;
     grid-template-columns: 100px 1fr;
     background-color: white;
@@ -38,6 +39,7 @@ header h1 {
     width: 97px;
     height: 80px;
     text-indent: -9999999989px;
+
 
 }
 
