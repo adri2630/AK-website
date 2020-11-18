@@ -160,10 +160,15 @@ main h2 {
 
 .solution:hover > section {
     background: rgba(255, 255, 255, 0.9);
-    border: 0.1rem solid #ccc;
+    border: 1px solid #ccc;
     transition: all 0.3s;
+    border-radius: 25px 10px 20px 5px;
 
 
+
+}
+.solution:hover > .image{
+    visibility: hidden;
 }
 
 .solution:hover > section h3 {
@@ -204,16 +209,22 @@ main h2 {
     z-index: 10;
     display: grid;
 
-
 }
 
 .solution h3 {
-    font-size: 1.5rem;
+    margin-top: 3.5rem;
+
+    margin-left: 2rem;
+    margin-right: 2rem;
+    font-size:2.2rem;
+     color: #fff;
 }
 
-.solution h3,
-p {
-    margin-left: 2rem;
+
+.solution
+p {   margin-left: 2rem;
+    margin-right: 2rem;
+
     color: #fff;
 }
 
@@ -242,7 +253,7 @@ p {
     align-items: center;
 }
 .imgfordesk{
-    width: 80%;
+    width: 70%;
 
 }
 
@@ -277,7 +288,7 @@ p {
      text-decoration: underline;
 }
 .contact h2 {
-    font-size: 3rem;
+    font-size: 3vw;
 
     color: #fff;
     text-align: center;
@@ -285,7 +296,7 @@ vertical-align: middle;
 
 }
 .contact h4 {
-   line-height: 90px;
+   line-height: 1vw;
      cursor: pointer;
     color: #fff;
     text-align: center;
@@ -299,10 +310,27 @@ footer{
      display: grid;
     grid-column: 1/-1;
 
+}
+  footer ul {
+    display: flex;
+    flex-wrap: wrap;
+   align-items: center;
+
 
 
 }
+footer >*{
+     margin: 1rem;
+}
+footer ul li {
 
+    padding: 1%;
+   list-style: none;
+}
+footer p{
+    color:#ECEFF2;
+    line-height: 2em;
+}
 @media only screen and (max-width: 890px) {
     .imgfordesk{
         display: none;
@@ -322,12 +350,12 @@ footer{
 
     header h1 {
 
-        margin-left: 5rem;
+        margin-left: 7rem;
     }
 
     nav ul {
 
-        margin-right: 5rem;
+        margin-right: 7rem;
     }
 
     .filter {
@@ -340,11 +368,13 @@ footer{
 
     }
     footer section{
-         margin-left: 5rem;
-        margin-right: 5rem;
+         margin-left: 7rem;
+        margin-right: 7rem;
     }
+
+
     #wrapper {
-        margin-left: 5rem;
-        margin-right: 5rem;
+        margin-left: 7rem;
+        margin-right: 7rem;
     }
 }
