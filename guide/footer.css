@@ -2,6 +2,7 @@ footer {
 	display: grid;
 	background-color: #386082;
 	grid-column: 1/-1;
+	margin-top: 10vw;
 
 }
 
