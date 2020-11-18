@@ -348,6 +348,9 @@ footer p {
     color: #ECEFF2;
     line-height: 2em;
 }
+.hidden{
+    display: none;
+}
 
 @media only screen and (max-width: 890px) {
     .imgfordesk {
