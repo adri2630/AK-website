@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Aleo:wght@300&family=Open+Sans:wght@300&display=swap');
+
 * {
 	box-sizing: border-box;
 }
@@ -15,9 +16,11 @@ body {
 	display: grid;
 	margin-top: 50px;
 }
+
 #gc-div {
 	height: 0px;
 }
+
 .grey-container {
 	display: grid;
 	margin-top: 50px;
@@ -51,7 +54,7 @@ body {
 }
 
 .step {
-	
+
 	display: flex;
 	position: relative;
 	margin: 25px auto;
@@ -72,18 +75,55 @@ body {
 .girl > img {
 	width: 100%;
 }
+
 .info {
-	width:40vw;
-	margin: 0 20px 0px ;
-	
+	width: 40vw;
+	margin: 0 20px 0px;
+
 }
+
 .info > h3 {
 	font-size: 24px;
 }
+
 .info > p {
 	font-family: "open sans";
 	font-size: 16px;
 }
+
+button {
+	background-color: #40407F;
+	color: white;
+	height: 35px;
+	width: 20%;
+	border: none;
+	border-bottom-left-radius: 40px;
+	border-top-left-radius: 40px;
+	border-bottom-right-radius: 30px;
+	font-family: "open sans";
+}
+/*-----GREEN BANNER------*/
+#green-container {
+	background-image: url(img/Group%2014.png);
+	display: flex;
+	text-align: center;
+	flex-direction: column;
+	position: relative;
+	margin: 25px auto;
+	top: 70px;
+	width: 60vw;
+	height: 20vw;
+	background-repeat: no-repeat;
+	color: white;
+	padding: 0 20px;
+	padding-bottom: 5px;
+}
+#ctn-title {
+	font-size: 40px;
+	
+}
+
+
 @media only screen and (max-width: 890px) {
 	.imgfordesk {
 		display: none;
